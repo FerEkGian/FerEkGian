@@ -1,0 +1,90 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 600px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.color_primary {
+  background-color: #4A5A6A !important;
+}
+
+.color_secundary {
+  background-color: #C98131 !important;
+}
+
+.color_text_primary {
+  color: #4A5A6A !important;
+}
+
+.color_text_secundary {
+  color: #C98131 !important;
+}
+
+.img_parallax {
+  padding: 100px 0px 0px 0px;
+}
+
+.padding_rs {
+  padding: 0px 20px 0px 0px;
+}
+
+.img_opacity {
+  background: #828E9F;
+  opacity: .5;
+}
+
+.black-text {
+  color: #000000 !important;
+}
