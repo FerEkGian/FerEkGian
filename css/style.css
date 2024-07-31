@@ -6,6 +6,17 @@
  * Made By MaterializeCSS.com
  */
 
+chatbox {
+  width: 300px;
+  height: 400px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: scroll;
+}
+inputBox {
+  width: 300px;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
