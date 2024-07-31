@@ -1,89 +1,290 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.12.4/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.12.4/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.12.4/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dutton Power</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="path/to/your/firebase-config.js"></script>
+</head>
+
+<body>
+    <nav class="color_primary" role="navigation">
+        <div class="nav-wrapper container">
+            <img src="img/DP_LOGO.webp" alt="" height="55">
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#" class="white-text">INICIO</a>
+                </li>
+                <li>
+                    <a href="#" class="white-text">SERVICIOS</a>
+                </li>
+                <li>
+                    <a href="#" class="white-text">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="#" class="white-text">CONTACTOS</a>
+                </li>
+            </ul>
+            <ul id="nav-mobile" class="sidenav">
+                <li><a href="#">Navbar Link</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <img class="img_parallax" src="img/img04.webp" width="500">
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <h2 class="header center teal-text color_text_secundary">GENERADORES DE ENERGÍA A LA BANGUARDIA
+                        </h2>
+                        <div class="row center">
+                            <h5 class="header col s12 light left-align">Soluciones en renta y venta de generadores
+                                eléctricos premium.
+                            </h5>
+                            <h5 class="header col s12 light left-align">Donde sea, cuando sea, nosotros llegamos hasta
+                                donde estés.
+                            </h5>
+                        </div>
+                        <div class="row center">
+                            <a href="http://materializecss.com/getting-started.html" id="download-button"
+                                class="btn-large waves-effect waves-light teal color_secundary">Conócenos</a>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax color_primary"><img src="img/img05.webp" alt="Unsplashed background img 1"></div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+    <div id="chatbox"></div>
+    <input type="text" id="inputBox" placeholder="Escribe tu mensaje aquí...">
+    <button onclick="sendMessage()">Enviar</button>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+
+    <div class="container ">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m2">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">home</i></h2>
+                        <h5 class="center">Residencial</h5>
+                        <img src="img/img01.webp" width="150">
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">laptop_mac</i></h2>
+                        <h5 class="center">Comunicaciones</h5>
+                        <img src="img/img01.webp" width="150">
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">build</i></h2>
+                        <h5 class="center">Sanitaria</h5>
+                        <img src="img/img01.webp" width="150">
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">business</i></h2>
+                        <h5 class="center">Construcción</h5>
+                        <img src="img/img01.webp" width="150">
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">location_city </i></h2>
+                        <h5 class="center">Industria</h5>
+                        <img src="img/img01.webp" width="150">
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">vpn_key</i></h2>
+                        <h5 class="center">Alquiler</h5>
+                        <img src="img/img01.webp" width="150">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h4 class="black-text">MÁS DE 15 AÑOS A LA VANGUARDIA</h4>
+                    <p class="left-align black-text">Nuestros servicios son completos y especializados. Todos nuestros
+                        equipos son
+                        premium, de las marcas más prestigiosas del mundo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="parallax img_opacity"><img src="img/img10.png" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>MÁS DE 15 AÑOS A LA VANGUARDIA</h4>
+                    <p class="left-align light">Nuestros servicios son completos y especializados. Todos nuestros
+                        equipos son
+                        premium, de las marcas más prestigiosas del mundo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="img/img07.webp" alt="Unsplashed background img 3"></div>
+    </div>
+
+    <footer class="page-footer white">
+        <div class="container">
+
+            <div class="row">
+                <div class="col s8">
+                    <img src="img/img09.webp" alt="">
+                    <p class="grey-text">Renta y venta de Plantas eléctricas. Nuestros asesores ¡están a sus ordenes!
+                        Servicio a toda la Península de Yucatán. (Yucatán, Campeche y Quintana Roo)</p>
+                    <div class="row">
+                        <div class="col s6">
+                            <h5 class="grey-text">Quienes somos</h5>
+                            <ul>
+                                <li><a class="grey-text" href="#!">Preguntas frecuentes</a></li>
+                                <li><a class="grey-text" href="#!">Servicios</a></li>
+                                <li><a class="grey-text" href="#!">Productos</a></li>
+                                <li><a class="grey-text" href="#!">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col s6 ">
+                            <h5 class="grey-text">Conócenos</h5>
+                            <ul>
+                                <li><a class="grey-text" href="#!">Nuestras marcas</a></li>
+                                <li><a class="grey-text" href="#!">Renta</a></li>
+                                <li><a class="grey-text" href="#!">Venta</a></li>
+                                <li><a class="grey-text" href="#!">Mantenimiento</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col s4 grey-text">
+                    <div class="row">
+                        <br>
+                        <div class="color_text_secundary"><span>DUTTON POWER</span></div>
+                        <div class="col s1">
+                            <p class="color_text_secundary"><i class="material-icons">location_on</i></p>
+                        </div>
+                        <div class="col s11">
+                            <p>
+                                Calle 28 N. 519-L6 x 17 y 19.
+                                <br>
+                                Colonia Maya. C.P. 97134
+                                <br>
+                                Mérida, Yucatán.
+                            </p>
+                        </div>
+                        <div class="color_text_secundary"><span>TELÉFONOS</span></div>
+                        <div class="col s1">
+                            <p class="color_text_secundary"><i class="material-icons">phone</i></p>
+                        </div>
+                        <div class="col s11">
+                            <p>
+                                (999) 469 0265
+                                <br>
+                                (999) 553 5550
+                            </p>
+                        </div>
+
+                        <div class="col s1">
+                            <div class="color_text_secundary"><span>CORREO</span></div>
+                            <p class="color_text_secundary"><i class="material-icons">email</i></p>
+                        </div>
+                        <div class="col s11">
+                            <br>
+                            <p>
+                                info@duttonpower.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col s3 grey-text">
+                    <a class="color_text_secundary" href="">AVISO DE PRIVACIDAD</a>
+                    <br>
+                    <a class="color_text_secundary" href="">TÉRMINOS Y CONDICIONES</a>
+
+                </div>
+                <div class="col s3 grey-text">
+                    <i class="bi bi-facebook padding_rs"></i>
+                    <i class="bi bi-instagram padding_rs"></i>
+                    <i class="bi bi-whatsapp"></i>
+                </div>
+
+                <div class="col s6 grey-text">
+                    <a class="waves-effect waves-light btn color_secundary"><i class="bi bi-search"></i> Bolsa de
+                        trabajo</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Made by <a class="color_text_secundary" href="">Fernando Ek</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
 </html>
