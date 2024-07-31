@@ -17,6 +17,13 @@ inputBox {
   width: 300px;
 }
 
+.container-img{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -31,7 +38,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 600px;
+  min-height: 590px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);

@@ -22,7 +22,7 @@ db.ref('messages').on('child_added', function (snapshot) {
 
 db.ref('responses').on('child_added', function(snapshot) {
     const chatbox = document.getElementById('chatbox');
-    const response = snapshot.val().response;
+    const response = snapshot.val().response;   
     const responseElement = document.createElement('div');
     responseElement.textContent = 'Bot: ' + response;
     chatbox.appendChild(responseElement);
