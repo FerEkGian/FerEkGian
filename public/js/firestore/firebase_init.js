@@ -1,3 +1,7 @@
+// Importa los módulos de Firebase
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+import { getFunctions } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-functions.js";
+
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyCpIQj5At4olD4qI0xkX6dcAty91Jqspf0",
@@ -9,4 +13,6 @@ var firebaseConfig = {
     measurementId: "G-GKVG3S32KF"
 };
 
-firebase.initializeApp(firebaseConfig);
+// Inicializa Firebase
+const app = initializeApp(firebaseConfig);
+const functions = getFunctions(app);

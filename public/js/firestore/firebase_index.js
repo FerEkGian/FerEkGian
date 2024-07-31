@@ -1,13 +1,14 @@
 // index.js
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-admin.initializeApp();
 
-exports.autoReply = functions.database.ref('/messages/{messageId}')
+import { database } from 'firebase-functions';
+import { initializeApp, database as _database } from 'firebase-admin';
+initializeApp();
+
+export const autoReply = database.ref('/messages/{messageId}')
     .onCreate((snapshot, context) => {
         const messageData = snapshot.val();
         const response = generateResponse(messageData.message);
-        return admin.database().ref('responses').push({
+        return _database().ref('responses').push({
             response: response,
             timestamp: Date.now()
         });
